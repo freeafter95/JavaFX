@@ -6,7 +6,14 @@ from sys import exit
 #向sys模块借一个exit函数用来退出程序
 import random
 #导入random模块，用来生成随机数
- 
+
+'''
+1.判断蛇碰到墙壁
+2.判断蛇碰到自身
+exit()
+'''
+
+
 pygame.init()
 #初始化pygame,为使用硬件做准备
  
@@ -42,6 +49,7 @@ while True:
         if event.type == pygame.USEREVENT:
             for i in range(len(snake) - 1, 0, -1):
                 snake[i] = snake[i - 1]
+
             if direction == 0:
                 snake[0] = (snake[0][0], snake[0][1] - 1)
             elif direction == 1:
