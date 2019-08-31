@@ -1,2 +1,2 @@
-# PyGame
-Use pygame make games
+# JavaFX
+Use JavaFX make games
